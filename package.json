@@ -1,0 +1,25 @@
+{
+  "name": "svg-cards",
+  "version": "1.0.0",
+  "description": "Heavily inspired by [Luke Pattons][Luke] project [Canvas Cards][Canvas cards] I set out to do something similar, but in SVG.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build": "npx @11ty/eleventy", 
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g12n/svg-cards.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g12n/svg-cards/issues"
+  },
+  "homepage": "https://github.com/g12n/svg-cards#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
