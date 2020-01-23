@@ -14,6 +14,10 @@ Diving into Creative Coding can be overwealming because you can run into any dir
 - As much vanilla javascript as possible – with some belt by 11ty
 - Be nice to yourself
 
+##Notes
+
+Order: ♦ Diamonds , Hearts ♥, Spades ♠, Clubs ♣ 
+
 
 
 [Canvas cards]:https://canvas-cards.glitch.me/
