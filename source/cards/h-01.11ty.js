@@ -6,12 +6,14 @@ let viewBox =`0 0 ${width} ${height}`
 const center = [width / 2, height/2]
 
 let content = ``
+let hue= 220;
 // Set Background Rectangle
-content += `<rect width="${width}" height="${height}" fill="hsl(10,80%, 10%)" />`;
+content += `<rect width="${width}" height="${height}" fill="hsl(${hue},80%, 90%)" />`;
 
 // function calculating points on a regular polygon
-const heart = (center = [0,0], radius= 100) =>{
+const heart = (center = [0,0], radius= 100, startDegrees = 0) =>{
     let r = radius /16;
+    let startRadians = (startDegrees * Math.PI) / 180;
     let [cx,cy] = center;
     let points = []
     for (let a = 0; a <= 2 * Math.PI; a += Math.PI/24) {
@@ -23,17 +25,23 @@ const heart = (center = [0,0], radius= 100) =>{
           5 * Math.cos(2 * a) -
           2 * Math.cos(3 * a) -
           Math.cos(4 * a));
-      points.push([x + cx, y + cy]);
+      points.push([cx + x,  cy + y]);
     }
     return points
 };
 
 // Loop to draw polygons
 
-for (let i=0; i<=8; i++){
-    const radius = width / 2 - 40 - 18 * i;
-    const points = heart(center, radius, 6, Math.random()*5*i)
-    const fill = `hsl(10,80%, ${80/12 * i + 10}%  )`
+
+let steps = 12;
+let maxRadius = width / 2 - 40;
+
+for (let i = 0; i <= steps; i++){
+  const radius = maxRadius - (maxRadius / steps * i) ;
+
+
+    const points = heart(center, radius, 12*i)
+    const fill = `hsl(${hue},80%, ${90 - (60/steps*i)}%  )`
 
     //path data string
     let [x,y] = points[0];
