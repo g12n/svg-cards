@@ -20,6 +20,30 @@ Order: ♦ Diamonds , Hearts ♥, Spades ♠, Clubs ♣
 
 
 
+## Symbols
+
+
+||♦|♥|♠| ♣|
+|-|-|-|-|-|-|
+|French| Diamonds|Hearts|Spades|Clubs (Clover)|
+|Latin|Coins [^1] |Cups|Swords| Wands [^2]|
+|Swiss|Bell|Rose|Shield|Arcorn|
+|German|Bell|Heart|Leave|Arcorn|
+|Element|Earth|Water |Air |Fire|
+
+[^1]: Pentacles,Disks, Rings
+[^2]: Batons, Clubs, Staves
+
+## Links 
+
+https://github.com/terkelg/awesome-creative-coding
+https://en.wikipedia.org/wiki/Minor_Arcana
+
+https://en.wikipedia.org/wiki/Playing_card_suit
+
+
 [Canvas cards]:https://canvas-cards.glitch.me/
 [Luke]: https://twitter.com/friendofpixels
 [pixum]: pixum.de
+
+
