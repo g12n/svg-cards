@@ -31,11 +31,16 @@ body{margin:0;
     }
 
     .card{ 
-        max-height: 80%; 
-        max-width: 80%;
+        width: 60vw;
+        height: auto;
+        max-height: none;
+        max-width: none;
         justify-self: center;
         align-self: center;
-        width: auto;
+        border: none;
+        padding: 4vw;
+        vertical-align: bottom;
+        
     }
  figure{
      display: flex;
@@ -44,10 +49,13 @@ body{margin:0;
      justify-content: center;
      width: 100vw; 
      height: 100vh;
+     
  }
  figcaption{
-     padding: 1rem;
-     margin: 1rem;
+     padding: 5vw;
+     font-size: 5vw;
+     font-weight: 200;
+
  }
     pre{display: none;}
 }
