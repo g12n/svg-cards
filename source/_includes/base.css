@@ -6,7 +6,10 @@ body{margin:0;
         border: 20px solid #fff; 
         width: 25vw; border-radius: 10px;
         background: #fff;
+        box-sizing: border-box;
     }
+
+    img{width: 100%;}
     header{ padding: 5vw; text-align:center}
 
     article{
@@ -31,7 +34,7 @@ body{margin:0;
     }
 
     .card{ 
-        width: 60vw;
+        width: 80vw;
         height: auto;
         max-height: none;
         max-width: none;
@@ -40,6 +43,7 @@ body{margin:0;
         border: none;
         padding: 4vw;
         vertical-align: bottom;
+        border-radius: 2vw;
         
     }
  figure{

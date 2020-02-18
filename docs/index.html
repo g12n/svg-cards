@@ -14,7 +14,10 @@
         border: 20px solid #fff; 
         width: 25vw; border-radius: 10px;
         background: #fff;
+        box-sizing: border-box;
     }
+
+    img{width: 100%;}
     header{ padding: 5vw; text-align:center}
 
     article{
@@ -39,7 +42,7 @@
     }
 
     .card{ 
-        width: 60vw;
+        width: 80vw;
         height: auto;
         max-height: none;
         max-width: none;
@@ -48,6 +51,7 @@
         border: none;
         padding: 4vw;
         vertical-align: bottom;
+        border-radius: 2vw;
         
     }
  figure{
@@ -221,7 +225,9 @@
 <article  id="d01">
 <figure>
 
-    <img class="card" src="d-01.svg" />
+    <div class="card">
+        <img  src="d-01.svg" />
+    </div>
     <figcaption>
     Ace of Diamonds
     </figcaption>
@@ -231,7 +237,9 @@
 
 <article id="h01">
 <figure>
-    <img class="card" src="h-01.svg" />
+    <div class="card">
+        <img  src="h-01.svg" />
+    </div>
     <figcaption>
     Ace of Hearts
     </figcaption>
@@ -241,7 +249,9 @@
 
 <article id="s01">
 <figure>
-    <img class="card" src="s-01.svg" />
+    <div class="card">
+    <img  src="s-01.svg" />y
+    </div>
     <figcaption>
     Ace of Spades
     <figcaption>
@@ -252,7 +262,9 @@
 
 <article id="c01">
 <figure>
-    <img class="card" src="c-01.svg" />
+<div class="card">
+    <img src="c-01.svg" />
+    </div>
     <figcaption>
     Ace of Clubs
     <figcaption>
