@@ -6,11 +6,11 @@ const center = [width / 2, height/2]
 let content = ``
 let hue= 140;
 // Set Background Rectangle
-content += `<rect width="${width}" height="${height}" fill="hsl(${hue},80%, 90%)" />`;
+content += `<rect width="${width}" height="${height}" fill="hsl(${hue},80%, 20%)" />`;
 
 let field = []
 
-let step = 20;
+let step = 60;
 let path = ``
 
 let draw = (x, y, direction, amplitude) => {
@@ -32,6 +32,6 @@ for (let x=0; x< width; x+= step){
   field.push(line);
 }
 
-content += `<path d="${path}" stroke="hsl(${hue},80%, 30%)" fill="none" stroke-width="2"/>`
+content += `<path d="${path}" stroke="hsl(${hue},80%, 30%)" fill="none" stroke-width="4"/>`
 
 module.exports = `<svg viewBox="${viewBox}" width="${width}" height="${height}" version="1.1" xmlns="http://www.w3.org/2000/svg">\n${content}</svg>`;

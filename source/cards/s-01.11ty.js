@@ -18,12 +18,12 @@ content += `<rect width="${width}" height="${height}" fill="hsl(${hue},80%, 20%)
 
 
 
-for (let i = 1; i<=30; i++){
+for (let i = 1; i<=40; i++){
 
-let p1 = add([], [width * 0.33 , height * 0.4], random([], 20))
-let p2 = add([], [width * 0.15, height * 0.7], random([], 20))
-let p4 = add([], [width * 0.66, height * 0.4], random([], 20))
-let p3 = add([], [width * 0.85, height * 0.7], random([], 20))
+let p1 = add([], [width * 0.33 , height * 0.4], random([], 30))
+let p2 = add([], [width * 0.15, height * 0.7], random([], 30))
+let p4 = add([], [width * 0.66, height * 0.4], random([], 30))
+let p3 = add([], [width * 0.85, height * 0.7], random([], 30))
 
 
 let spiros = [
@@ -38,14 +38,12 @@ path += SpiroPathm.mapSpiro(spiros)
 }
 
 
-for (let i = 1; i <= 30; i++) {
-
-  let p5 = add([], [width/2, height], random([], 100))
-  let p6 = add([], [width / 2, height*0.66], random([], 10))
-
+for (let i = 1; i <= 40; i++) {
+  let p5 =  [Math.random()*200 + (width/2-100) , height-50]
+  
+  let p6 = add([], [width / 2, height * 0.72], random([], 0))
   let spiros = [
-    
-    { x: p6[0], y: p6[1], type: "g4" },
+    { x: p6[0], y: p6[1], type: "corner" },
     { x: width * 0.5, y: height * 0.75, type: "g4" },
     { x: p5[0], y: p5[1], type: "g4" },
   ]
