@@ -31,7 +31,7 @@ const pointsOnRegularPolygon = (center = [0, 0], radius = 100, sides = 12, start
 for (let i=0; i<=12; i++){
     const radius = width / 2 - 40 - 18 * i;
     const points = pointsOnRegularPolygon(center, radius, 4, Math.random()*5*i)
-    const fill = `hsl(10,80%, ${80/12 * i + 10}%  )`
+    const fill = `hsl(11,80%, ${80/12 * i + 10}%  )`
     
     //path data string
     let [x,y] = points[0];
