@@ -104,5 +104,7 @@ dist
 .tern-port
 
 docs/_eleventy_redirect
+docs
 
 .DS_Store
+
