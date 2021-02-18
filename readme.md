@@ -47,3 +47,4 @@ https://en.wikipedia.org/wiki/Playing_card_suit
 [pixum]: pixum.de
 
 
+https://www.npmjs.com/package/svgpath

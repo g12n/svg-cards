@@ -1,0 +1,15 @@
+---
+pagination:
+    data: deck
+    size: 1
+    alias: card
+permalink: "deck/{{ card.filename }}.svg"
+---
+
+<svg viewBox="{{card.viewBox[0]}} {{card.viewBox[1]}} {{card.viewBox[2]}} {{card.viewBox[3]}}" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>{{card.title}}</title>
+    <rect x="{{card.viewBox[0]}}" y="{{card.viewBox[1]}}" width="{{card.viewBox[2]}}" height="{{card.viewBox[3]}}" fill="{{card.background}}"/>
+    {% for layer in card.layers %}
+    <path d="{{layer.d}}" fill="rgba(255,255,255,0.5)" stroke="#000" />
+    {% endfor %}
+</svg>

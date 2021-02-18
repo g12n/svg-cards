@@ -1,0 +1,19 @@
+---
+layout: base.njk
+permalink: "deck/index.html"
+---
+
+<div class="deck">
+
+{% for card in deck %}
+<figure>
+<img src="{{card.filename}}.svg"/>
+<figcaption>
+<a href="{{card.filename}}.html">    {{card.title}}</a>
+<figcaption>
+
+</figure>
+
+{% endfor %}
+
+</div>

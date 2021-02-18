@@ -64,3 +64,16 @@ body{margin:0;
  }
     pre{display: none;}
 }
+
+
+
+:root {
+    --grid-col-breakpoint: 15rem;
+  }
+  
+
+.deck{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-col-breakpoint), 1fr));
+
+}

@@ -1,0 +1,28 @@
+---
+layout: base.njk
+pagination:
+    data: deck
+    size: 1
+    alias: card
+permalink: "deck/{{ card.filename }}.html"
+---
+
+
+
+<figure>
+<img src="{{card.filename}}.svg"/>
+<figcaption>
+    {{card.title}}
+<figcaption>
+
+</figure>
+
+
+
+<nav aria-labelledby="my-pagination">
+  <ol>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous |url  }}">Previous</a>{% else %}Previous{% endif %}</li>
+
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next  |url }}">Next</a>{% else %}Next{% endif %}</li>
+  </ol>
+</nav>
