@@ -27,7 +27,7 @@
     "@mathigon/fermat": "^0.6.4",
     "d3-color": "^2.0.0",
     "d3-delaunay": "^5.3.0",
-    "d3-interpolate": "^2.0.1",
+    "d3-interpolate": "^3.0.1",
     "d3-polygon": "^2.0.0",
     "d3-shape": "^2.1.0",
     "d3-voronoi-map": "^2.0.1",
