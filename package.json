@@ -24,7 +24,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1"
   },
   "dependencies": {
-    "@mathigon/fermat": "^0.6.4",
+    "@mathigon/fermat": "^1.0.3",
     "d3-color": "^2.0.0",
     "d3-delaunay": "^5.3.0",
     "d3-interpolate": "^2.0.1",
