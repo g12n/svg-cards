@@ -33,6 +33,6 @@
     "d3-voronoi-map": "^2.0.1",
     "gl-vec2": "^1.3.0",
     "libspiro-js": "^0.4.0",
-    "svgpath": "^2.3.0"
+    "svgpath": "^2.6.0"
   }
 }
